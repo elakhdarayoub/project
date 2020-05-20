@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 1em;
+}
+
+body{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-desktop.png);
+}
+a{
+    text-decoration: none;
+}
+
+p{
+    font-weight: normal;
+}
+
+.form-container,
+.content{
+    display : inline-block;
+}
+
+.content{
+    width: 40%;
+    color: white;
+    margin-top: 16rem;
+    margin-left: 10rem;
+}
+
+.content-heading{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.content-description{
+    margin-top: 1rem;
+    font-size: .9rem;
+    width: 90%;
+    line-height: 1.8;
+}
+
+.form-container{
+    width: 35%;
+    margin-top: 7rem;
+    margin-right: 8rem;
+    position: absolute;
+    right: 20px;
+}
+
+.featured > h2{
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    font-size: 1em;
+    font-weight: 200;
+    text-align: center;
+    padding: .5em 1em;
+    margin-bottom: 1.4em;
+    border-radius: 10px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.emphesized{
+    font-weight: bold;
+}
+
+.signup{
+    background-color: white;
+    padding: 2em 1em;
+    border-radius: 10px;
+}
+
+.signup form{
+    width: 90%;
+    margin: auto;
+}
+
+.signup input,
+.cta{
+    display: block;
+    width: 100%;
+    color: black;
+    font-family: inherit;
+    font-weight: 600;
+    padding: 1em 2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.signup input:focus,
+.cta:focus{
+    outline: none;
+    border: 1px solid hsl(248, 32%, 49%);
+}
+
+.cta{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 1.5em;
+    box-shadow: 0 5px hsl(154, 86%, 28%);
+    cursor: pointer;
+}
+
+.form-footer p{
+    font-size: .6em;
+    font-weight: 700;
+    color: #c8c7c7;
+    text-align: center;
+}
+
+.form-footer a{
+    color: hsl(0, 100%, 74%);
+}
+
+@media (max-width : 600px){
+
+.content,
+.form-container{
+    position: static;
+    width: 90%;
+    margin: 20px 20px;
+}
+
+.content-heading,
+.content-description{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content-description{
+    margin-left: 25px;
+}
+
+}
